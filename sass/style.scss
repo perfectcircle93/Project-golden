@@ -1,10 +1,10 @@
 /*Variables*/
-$font-text: 'Raleway', sans-serif;
-$font-header: 'Roboto', sans-serif;
+$font-text: 'Hammersmith One', sans-serif;
+$font-header: 'Marck Script', cursive;
 
-$color-main: #576671;
-$color-light: #87949e;
-$color-icons: #17daa3;
+$color-main: black;
+$color-light: #777777;
+$color-icons: #fed136;
 
 $transition: all 1s;
 
@@ -24,7 +24,7 @@ body {
 }
 
 .container {
-    max-width: 2000px;
+    max-width: 1400px;
     padding: 0 20px;
     margin: 0 auto;
 }
@@ -38,35 +38,62 @@ body {
     min-width: 160px;
     margin: 63px auto 0 auto;
     padding: 19px 51px 17px 53px;
-    border-radius: 24px;
     font-family: $font-text;
     text-align: center;
     text-decoration: none;
     cursor: pointer;
-    border: 2px solid #fff;
-    color: #fff;
+    border: 2px solid $color-icons;
+    background: $color-icons;
+    color: white;
     transition: $transition;
+    font-size: 20px;
+      &:hover {
+        color: black;
+      }
 }
 
-/*Navigation splash*/
-.splash .navigation {
+.section-title {
+  font-family: $font-text;
+  color: $color-main;
+  font-size: 40px;
 }
-.splash .navigation ul {
+
+p {
+  font-family: $font-header;
+  color: $color-light;
+}
+/*Navigation splash*/
+nav {
+  width: 1200px;
+  margin: 20px;
+}
+nav ul {
     padding: 0;
     margin: 0;
     list-type-style: none;
+    float: right;
 }
 
-.splash .navigation ul li {
+nav ul li {
     display: inline-block;
+    margin: 0 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+     &:hover {
+         color: $color-icons;
+         text-decoration: none;
+     }
 }
 
 /*Splash*/
 .splash {
-    height: 1068px;
+    height: 700px;
     color: #fff;
     position: relative;
-    background-image: url('https://i.postimg.cc/xT3KD62Q/Background.png');
+    background-image: url('https://i.postimg.cc/tgNgJwrX/Background-Image.png');
     background-position: center center;
     background-size: cover;
     background-attachment: fixed;
@@ -76,21 +103,21 @@ body {
 .splash-inner {
     position: absolute;
     width: 100%;
-    top: 50%;
+    top: 60%;
     left: 50%;
     transform: translate(-50%,-50%);
     }
 
 .page-title {
     color: #ffffff;
-    font-size: 60px;
+    font-size: 70px;
     font-family: $font-header;
     font-weight: 100;
 }
 
 .page-subtitle {
     color: #ffffff;
-    font-size: 24px;
+    font-size: 100px;
     font-family: $font-text;
     font-weight: 400;
 }
