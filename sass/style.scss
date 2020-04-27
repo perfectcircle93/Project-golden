@@ -174,3 +174,37 @@ nav ul li a {
 .portfolio {
   background-color: #f7f7f7;
 }
+
+/*Footer*/
+.page-footer .container {
+  display: flex;
+  justify-content: flex-start;
+  padding: 48px;
+}
+
+.page-footer .social-links {
+    list-style-type: none;
+    margin: 0 100px;
+}
+
+.page-footer .social-links li {
+    display: inline-block;
+    font-size: 0;
+    margin: 0 20px;
+    transition: $transition;
+    border: 2px solid $color-main;
+    border-radius: 50%;
+    background: $color-main;
+    &:hover {
+        transform: scale(1.5) rotate(360deg);
+    }
+
+}
+
+.page-footer .social-links li i {
+    font-size: 30px;
+    color: white;
+    width: 60px;
+    height: 60px;
+    line-height: 60px;
+}

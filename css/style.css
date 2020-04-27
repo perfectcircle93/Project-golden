@@ -178,4 +178,40 @@ nav ul li a:hover {
 .portfolio {
   background-color: #f7f7f7;
 }
+
+/*Footer*/
+.page-footer .container {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: start;
+      justify-content: flex-start;
+  padding: 48px;
+}
+
+.page-footer .social-links {
+  list-style-type: none;
+  margin: 0 100px;
+}
+
+.page-footer .social-links li {
+  display: inline-block;
+  font-size: 0;
+  margin: 0 20px;
+  transition: all 1s;
+  border: 2px solid black;
+  border-radius: 50%;
+  background: black;
+}
+
+.page-footer .social-links li:hover {
+  transform: scale(1.5) rotate(360deg);
+}
+
+.page-footer .social-links li i {
+  font-size: 30px;
+  color: white;
+  width: 60px;
+  height: 60px;
+  line-height: 60px;
+}
 /*# sourceMappingURL=style.css.map */
