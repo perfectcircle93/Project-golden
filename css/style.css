@@ -47,6 +47,7 @@ body {
   font-family: "Hammersmith One", sans-serif;
   color: black;
   font-size: 40px;
+  padding: 80px 0 0 0;
 }
 
 p {
@@ -115,5 +116,47 @@ nav ul li a:hover {
   font-size: 100px;
   font-family: "Hammersmith One", sans-serif;
   font-weight: 400;
+}
+
+/*Services*/
+.services-wrapper {
+  display: -ms-flexbox;
+  display: flex;
+  padding: 30px;
+}
+
+.feature {
+  -ms-flex: 0 0 33.333333%;
+      flex: 0 0 33.333333%;
+  max-width: 33.333333%;
+  text-align: center;
+  margin: 24px 0 0 0;
+}
+
+.feature i {
+  width: 75px;
+  height: 75px;
+  line-height: 75px;
+  color: #fed136;
+  border-radius: 50%;
+  border: 3px solid #fed136;
+  font-size: 40px;
+  transition: all 1s;
+}
+
+.feature i:hover {
+  transform: rotate(360deg);
+}
+
+.feature-title {
+  margin: 24px 0 0 0;
+  font-family: "Hammersmith One", sans-serif;
+  color: black;
+}
+
+.feature-description {
+  margin: 24px 0 0 0;
+  padding: 0 24px;
+  font-family: "Marck Script", cursive;
 }
 /*# sourceMappingURL=style.css.map */
