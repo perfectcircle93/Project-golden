@@ -55,7 +55,7 @@ p {
 /*Navigation splash*/
 nav {
   margin: 20px;
-  width: 1200px;
+  max-width: 1200px;
 }
 
 nav ul {
@@ -63,6 +63,7 @@ nav ul {
   margin: 0;
   list-type-style: none;
   float: right;
+  text-align: right;
 }
 
 nav ul li {
@@ -82,9 +83,9 @@ nav ul li a:hover {
 
 /*Splash*/
 .splash {
-  height: 700px;
-  color: #fff;
   position: relative;
+  min-height: 700px;
+  color: #fff;
   background-image: url("https://i.postimg.cc/tgNgJwrX/Background-Image.png");
   background-position: center center;
   background-size: cover;
@@ -95,7 +96,7 @@ nav ul li a:hover {
 
 .splash-inner {
   position: absolute;
-  width: 100%;
+  min-width: 100%;
   top: 60%;
   left: 50%;
   transform: translate(-50%, -50%);
@@ -212,9 +213,6 @@ nav ul li a:hover {
 
 /*Media*/
 @media (max-width: 767px) {
-  nav {
-    width: auto;
-  }
   .services-wrapper {
     -ms-flex-direction: column;
         flex-direction: column;
