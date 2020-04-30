@@ -24,7 +24,7 @@ body {
 }
 
 .container {
-    max-width: 1400px;
+    max-width: 100%;
     padding: 0 20px;
     margin: 0 auto;
 }
@@ -62,13 +62,13 @@ p {
 }
 /*Navigation splash*/
 nav {
-  margin: 20px;
-  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 20px;
 }
 nav ul {
-    padding: 0;
     margin: 0;
-    list-type-style: none;
+    list-style-type: none;
     float: right;
     text-align: right;
 }
@@ -76,10 +76,12 @@ nav ul {
 nav ul li {
     display: inline-block;
     margin: 0 20px;
+    position: relative;
 }
 
 nav ul li a {
     text-decoration: none;
+    display: block;
     color: white;
      &:hover {
          color: $color-icons;
@@ -101,7 +103,7 @@ nav ul li a {
 
 .splash-inner {
     position: absolute;
-    min-width: 100%;
+    width: 100%;
     top: 60%;
     left: 50%;
     transform: translate(-50%,-50%);
@@ -109,9 +111,10 @@ nav ul li a {
 
 .page-title {
     color: #ffffff;
-    font-size: 70px;
+    font-size: 6.2em;
     font-family: $font-header;
     font-weight: 100;
+
 }
 
 .page-subtitle {
@@ -221,4 +224,17 @@ nav ul li a {
       margin: 0 auto;
       margin-bottom: 120px;
     }
-}
+    nav ul {
+      display: flex;
+      flex-direction: column;
+    }
+    .page-footer .container {
+      flex-wrap: wrap;
+    }
+    .page-title {
+      font-size: 30px;
+    }
+    .page-subtitle {
+      font-size: 60px;
+    }
+  }
