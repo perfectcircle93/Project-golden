@@ -14,7 +14,7 @@ body {
 }
 
 .container {
-  max-width: 100%;
+  max-width: 1200px;
   padding: 0 20px;
   margin: 0 auto;
 }
@@ -106,7 +106,7 @@ nav ul li a:hover {
 
 .page-title {
   color: #ffffff;
-  font-size: 6.2em;
+  font-size: 70px;
   font-family: "Marck Script", cursive;
   font-weight: 100;
 }
@@ -182,13 +182,12 @@ nav ul li a:hover {
 .page-footer .container {
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-pack: justify;
-      justify-content: space-between;
-  padding: 48px;
+  padding: 48px 0;
 }
 
 .page-footer .social-links {
   list-style-type: none;
+  margin-left: 100px;
 }
 
 .page-footer .social-links li {
@@ -235,9 +234,16 @@ nav ul li a:hover {
     -ms-flex-direction: column;
         flex-direction: column;
   }
+  .page-footer p {
+    margin: 0 auto;
+  }
   .page-footer .container {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
+  }
+  .page-footer .social-links li {
+    margin: 0 50px;
+    margin-left: -60px;
   }
   .page-title {
     font-size: 30px;

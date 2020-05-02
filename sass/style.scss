@@ -24,7 +24,7 @@ body {
 }
 
 .container {
-    max-width: 100%;
+    max-width: 1200px;
     padding: 0 20px;
     margin: 0 auto;
 }
@@ -111,7 +111,7 @@ nav ul li a {
 
 .page-title {
     color: #ffffff;
-    font-size: 6.2em;
+    font-size: 70px;
     font-family: $font-header;
     font-weight: 100;
 
@@ -178,12 +178,12 @@ nav ul li a {
 /*Footer*/
 .page-footer .container {
   display: flex;
-  justify-content: space-between;
-  padding: 48px;
+  padding: 48px 0;
 }
 
 .page-footer .social-links {
     list-style-type: none;
+    margin-left: 100px;
 }
 
 .page-footer .social-links li {
@@ -228,8 +228,16 @@ nav ul li a {
       display: flex;
       flex-direction: column;
     }
+    .page-footer p {
+      margin: 0 auto;
+    }
     .page-footer .container {
       flex-wrap: wrap;
+
+    }
+    .page-footer .social-links li {
+     margin: 0 50px;
+     margin-left: -60px;
     }
     .page-title {
       font-size: 30px;
@@ -237,4 +245,5 @@ nav ul li a {
     .page-subtitle {
       font-size: 60px;
     }
+
   }
